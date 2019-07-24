@@ -26,12 +26,13 @@ https://stackoverflow.com/questions/46877667/how-to-push-a-new-initial-project-t
 
 	open directory in vs code
 
-	Upload
+	UPLOAD
 
 	1 save all 
 	2 click on branch in top left 'y'
 	3 click on menu at top and select stage all changes
-	4 
+	4 click on check mark and add a comment (mandatory)
+	5 click push
 
 
 
