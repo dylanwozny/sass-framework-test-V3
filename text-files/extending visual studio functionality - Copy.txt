@@ -1,0 +1,182 @@
+// MY EDITOR SETTINGS
+
+FILEPATH WITH SASS > URL PATH AS IT IS IN CSS FILE NOT SASS _PARTIALS !
+
+
+/// in terminal to install extensions quickly
+/// at school
+/// C:\Users\dwozny2\AppData\Local\Programs\Microsoft VS Code
+
+
+// DO THIS FIRST !
+code C:\Users\dwozny2\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions
+
+code --install-extension zignd.HTML-CSS-Class-Completion
+code --install-extension ritwickdey.liveserver
+code --install-extension ritwickdey.live-sass
+code --install-extension esbenp.prettier-vscode
+code --install-extension pkief.material-icon-theme
+
+REFRESH WINDOW, type command in COMMAND PALLETE
+- cntrl + shift + p
+- 'reload window'
+
+
+
+
+AIRBNB STYLE
+SASS
+
+EXTENSIONS
+
+indent on paste
+live sass
+live server
+material icon theme
+prettier
+stylelint
+(for bootstrap) intellisense for css
+
+JSON SETTINGS>>>>>>>>
+
+// IN TERMINAL
+// at school
+
+1. ////////////////// change directory to settings location
+ cd C:\Users\dwozny2\AppData\Roaming\Code\User\
+
+2. //////////////// run in visual studio code, reuse window, open settings.json !
+ code -r settings.json
+
+3.// copy below settings
+
+{
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/",
+        }
+    ],
+    "window.zoomLevel": 1,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+
+    // global configuration file setup
+    "stylelint.config": {
+        "rules": {
+            "selector-max-class": 2,
+            "selector-max-compound-selectors": 2,
+            "no-descending-specificity": true
+        }
+    },
+    // turn off css.validation: false
+    "css.validate": false,
+    "html.format.enable": false,
+    //format on save
+    "editor.formatOnSave": true,
+    // word wrap on 
+    "editor.wordWrap": "on",
+    // NO text based suggestions while typing
+    "editor.wordBasedSuggestions": false,
+    "workbench.iconTheme": "material-icon-theme",
+    
+}
+
+
+
+
+Prettier 
+- works with any language
+- can setup any rules for project
+
+stylelint
+- can say sass style is wrong..
+- disable default if watned...
+- https://stylelint.io/user-guide/rules/
+- paste from defaults(left) to user settings(right)
+
+
+Indent on paste
+-for me
+
+
+css formatter
+- lighter formatter
+
+material icon theme
+- bottom left gear > file icon theme > pick material icon after install
+
+
+IF MAKING A PROJECT RULE SET FOR DEVELOPERS 
+CREATE ".stylelintrc" file..
+
+{
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/",
+        }
+    ],
+    "window.zoomLevel": 1,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+
+    // global configuration file setup
+    "stylelint.config": {
+        "rules": {
+            "selector-max-class": 2,
+            "selector-max-compound-selectors": 2,
+            "no-descending-specificity": true
+        }
+    },
+    // turn off css.validation: false
+    "css.validate": false,
+    "html.format.enable": false,
+    //format on save
+    "editor.formatOnSave": false,
+    // word wrap on 
+    "editor.wordWrap": "on",
+    // NO text based suggestions while typing
+    "editor.wordBasedSuggestions": false,
+    "workbench.iconTheme": "material-icon-theme",
+    
+}
+
+
+https://github.com/stylelint/stylelint-config-standard/blob/master/index.js <<<<<<<< hardcore lint standard rules
+
+
+https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd <<<<<<<< Accessibility testing in Chrome Developer Tools, auditing.
+
+
+ROLES
+
+semantic meaning for accessability, screen reader.
+
+ARIA ROLES
+
+- audit with accessability and turned on in inspector
+
+role="banner"
+role="navigation"
+
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques <<<<<<< ARIA rules
+
+wes bosman videos, good quick overview
+
+PRE-POS 
+deployment builder..
+extension, need to install
+
+
+
+
+

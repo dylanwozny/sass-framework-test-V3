@@ -1,0 +1,57 @@
+.pricing-flex{
+    color: black;
+    background: linear-gradient(to left, rgb(176, 137, 228), rgb(120, 163, 211));
+}
+
+
+// FLEX CONTAINER
+.pricing-grid{
+    width:50rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+// FLEX CHILDREN
+.plan{
+    flex: 1;
+    background: rgba(250, 252, 252, 0.3);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    a{
+        padding: 1rem;
+        background: yellow;
+        border-radius: 5px;
+    }
+
+    .cta{
+        align-self: flex-end;
+        
+    }
+}
+
+.plan > *{
+    flex: 1 1 100%;
+}
+
+
+.features{
+    margin-bottom: 2rem;
+    li{
+        border-bottom: solid 1px black;
+        padding: .5rem;
+    }
+
+}
+
+
+.price{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}

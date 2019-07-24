@@ -1,0 +1,11 @@
+to do
+
+style check boxes
+add in line height to bottom desripctions
+
+pretty up html and css and delete unesscary files and folders
+addd alt tags and check semantic html
+audit
+upload to netlify
+
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp

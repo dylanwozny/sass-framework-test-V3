@@ -1,0 +1,58 @@
+/* NAVIGATION STYLES */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+  // background: rgb(249, 248, 248);
+  // box-shadow: 0 0 8px 0 rgb(227, 227, 227);
+  // border: 1px solid rgb(227, 227, 227);
+  // padding: 0.25rem 0.5rem;
+  user-select: none;
+}
+
+/* Icon Styles */
+// .icon-view {
+//   display: flex;
+//   justify-content: space-between;
+//   color: grey;
+// }
+
+/* Menu Panel Styles */
+
+.menu-panel {
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: -20rem;
+  left: 0;
+  padding: 2rem 0;
+  background-color: $borderGrey;
+  z-index: 5;
+}
+
+/*  Menu Panel Option Styles */
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.mobile-link {
+  padding: 0.5rem 0;
+  align-self: center;
+}
+
+.mobile-link a,
+.mobile-link a:link,
+.mobile-link a:visited,
+.mobile-link a:active {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.mobile-link a:hover {
+  border-bottom: solid 2px $aqua;
+}

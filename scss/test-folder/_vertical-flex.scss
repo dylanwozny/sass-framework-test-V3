@@ -1,0 +1,33 @@
+///////VERTICAL ALIGNMENT flex-nesting//////////////////
+
+.vertical-flex-container {
+  display: flex;
+
+  li {
+    flex: 2;
+    // border: 1px solid red;
+    display: flex;
+  }
+
+  a {
+    flex-basis: 100%;
+    font-size: 1.2rem;
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 2.5rem;
+    height: 1.5rem;
+  }
+
+  .arrow {
+    flex: 1;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+  }
+}

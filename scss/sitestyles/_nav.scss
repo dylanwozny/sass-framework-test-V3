@@ -1,0 +1,34 @@
+.site-nav {
+  padding: 0.5rem 1rem;
+}
+
+.icon-view {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-icon {
+  width: 1.5rem;
+}
+.list-view {
+  display: none;
+}
+.avenu-brand {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #333;
+  span {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 780px) {
+  .menu-icon {
+    display: none;
+  }
+  .list-view {
+    display: flex;
+    li {
+      margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.page-header {
+  background: linear-gradient(
+      rgba(83, 83, 83, 0.589),
+      rgba(128, 128, 128, 0.76)
+    ),
+    url("../img/header-bkg-small.jpg") center / cover no-repeat;
+  padding: 8rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: calc(2rem + 2vw);
+  line-height: 2.5rem;
+  color: $white;
+}
+
+.tagline {
+  font-size: calc(1.25rem + 0.5vw);
+  padding-top: 2rem;
+}
+
+@media (min-width: 780px) {
+  .page-header {
+    background: linear-gradient(
+        rgba(83, 83, 83, 0.589),
+        rgba(128, 128, 128, 0.76)
+      ),
+      url("../img/header-bkg-large.jpg") center / cover no-repeat;
+    padding: 8rem 0;
+  }
+}

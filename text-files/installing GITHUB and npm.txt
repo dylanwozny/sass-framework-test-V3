@@ -1,0 +1,68 @@
+https://stackoverflow.com/questions/46877667/how-to-push-a-new-initial-project-to-github-using-vs-code
+
+1. install GIT! (NOT GIT HUB) on desktop  https://git-scm.com/download/win 
+2. insatll node.js 
+3. Reload visual studio code
+4. type "npm init" and fill out
+5. type "npm install" (will load previous depednacies(boostrap,jquery etc.) that is written in json file )
+///// install bootsrap or you cant install other with npm install command /////
+//// "NPM INSTALL WILL BE written to NODE_MODULES and Other installed things with npm will be logged here!"
+
+6. type "npm install bootstrap@latest"
+
+//// .gitignore so you dont upload nod_modules ////
+
+7. create .gitignore file in main folder (not src)
+8. write /node_modules in file to ignore node modules
+	- beacuse oyu dont want to upload node modules
+
+9. //// Github commiting and downloading....
+	check dominait me github.....
+
+10. DONE: next time you open folder, NPM INSTALL will install dependancies automatically
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+https://www.youtube.com/watch?v=qXJ_CQLj-o0 <--------
+
+https://github.com/dylanwozny/test-upload <-------
+
+Git Basic Command
+VSCode ~+CTRL => terminal/command line
+MACOS => full UNIX terminal
+Window => emulated UNIX terminal (Power Shell) **
+
+UNIX COMMANDS
+
+clear  clears the console
+ls - directory listing
+cd - change directory
+pwd - current working directory (where you are)
+rm -rf  remove directory
+rm     remove a file
+mv   files to move   where to move them
+
+GIT COMMANDS
+git --version git verison
+git clone https://github.com/username/repo.git
+
+
+Class Respository
+https://github.com/dominait
+https://github.com/dominait/1530.git
+   url             username   Respository
+
+To Use Git
+make sure that git is installed on the machine
+your using....
+git -v
+
+Terminology
+CLI  command line interface
+git-CLI
+node-CLI
+npm-CLI
+gulp-CLI
+
+My Build Pipeline for static websites

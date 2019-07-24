@@ -1,0 +1,408 @@
+// AIR BNB STYLE
+
+//to do
+// convert div into semantic...maybe ul>li
+// convert h1 into relavant h2/h3 etc..
+// ORDER: top is global/general css, bottom is more specific
+
+.main-form {
+  padding: 2rem 2rem 2rem 2rem;
+
+  header {
+    padding: 0rem 0rem 1.9rem 0rem;
+  }
+
+  p {
+    margin-bottom: 1.1rem;
+  }
+}
+
+.avenue-client-reg {
+  input,
+  select {
+    // background: white;
+    border: 1px solid $borderGrey;
+    width: 100%;
+    line-height: 1.5;
+    padding: 0.25rem 0.5rem;
+    font-family: "montserrat";
+    font-size: 1.25rem;
+    color: #999;
+    margin-bottom: 1.1rem;
+  }
+
+  select {
+    /* removes defaults
+                    auto prefix in sass settings  */
+    -webkit-appearance: none;
+    appearance: none;
+    /* auto prefix */
+    /* fix this background path*/
+    background: url(../img/chevron-up-solid.svg) no-repeat;
+    background-position: 98% 50%;
+    background-size: 1.5rem 1.5rem;
+  }
+
+  label {
+    color: $grey;
+    font-size: 1rem;
+    font-family: "montserrat";
+    margin: 0;
+  }
+
+  p {
+    color: $grey;
+  }
+  .input-button {
+    border: 3px solid $darkBlack;
+    color: $darkBlack;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+  }
+  .input-button:hover {
+    cursor: pointer;
+  }
+}
+
+input[id="message"] {
+  height: 11.6rem;
+}
+
+.radio-button {
+  display: flex;
+  p {
+    margin-left: 1.5rem;
+  }
+}
+
+.dot {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid grey;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-dot {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background: black;
+}
+
+.sign-up {
+  padding: 2rem 0 2rem 0;
+  header {
+    width: 100%;
+  }
+}
+.preferences {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0 2rem 0;
+
+  header {
+    width: 100%;
+  }
+}
+
+.sign-up-container {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    flex: 1 1 33%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  p {
+    font-size: 0.9rem;
+    padding-left: 0.3rem;
+    line-height: 2;
+    margin-bottom: 0;
+  }
+}
+
+.submit-form,
+.privacy-txt {
+  flex: 1 1 50%;
+  padding-top: 2rem;
+  height: 10rem;
+
+  input {
+    width: 80%;
+    padding: 1rem 0;
+  }
+
+  ////////////////////////////////////////////left off
+  img {
+    width: 1rem;
+  }
+}
+
+.submit-form {
+  flex: 1 1 50%;
+}
+
+.privacy-txt {
+  max-width: 259px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 3.8rem;
+    left: 14rem;
+  }
+}
+
+.input-button {
+  background-color: white;
+}
+
+.store-location {
+  flex: 1 1 100%;
+
+  label {
+    width: 100%;
+  }
+  select {
+    width: calc(50% - 32px);
+  }
+}
+
+.language,
+.clothing-size {
+  flex: 1 1 50%;
+}
+
+.language {
+  padding-right: 2rem;
+}
+
+.sign-up {
+  input {
+    width: 1rem;
+  }
+
+  label {
+    // width: 95%;
+    padding-left: 0rem;
+    // margin-bottom:
+  }
+}
+
+.regular-checkbox {
+  display: none;
+}
+
+.regular-checkbox + label {
+  background-color: white;
+  border: 1px solid #cacece;
+  padding: 12px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox:checked + label {
+  background-color: white;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+  content: "\2714";
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  color: #99a1a7;
+}
+
+.big-checkbox + label {
+  padding: 18px;
+}
+
+.big-checkbox:checked + label:after {
+  font-size: 28px;
+  left: 6px;
+}
+
+///////////////////////////////////////////////
+@media (min-width: 780px) {
+  // 36 + 2 padding rem
+  main {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  // changed
+  .sign-up-container {
+    div {
+      flex: 1 1 50%;
+    }
+  }
+
+  .main-form {
+    .sign-up {
+      padding-top: 4.3rem;
+      grid-area: sign-up;
+    }
+  }
+
+  .avenue-client-reg {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // padding: 1rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+
+    // template areas
+    grid-template-areas:
+      "firstname lastname"
+      "email password"
+      "confirm frequency"
+      "phone terms"
+      "message message"
+      "sign-up sign-up"
+      "preferences preferences";
+  }
+
+  .first-name {
+    grid-area: firstname;
+  }
+  .last-name {
+    grid-area: lastname;
+  }
+  .email {
+    grid-area: email;
+  }
+  .password {
+    grid-area: password;
+  }
+
+  .confrim-password {
+    grid-area: confirm;
+  }
+
+  .email-frequency {
+    grid-area: frequency;
+  }
+
+  .phone-number {
+    grid-area: phone;
+  }
+
+  .radio-button {
+    p {
+      width: 80%;
+    }
+  }
+  .fine-print {
+    grid-area: terms;
+    align-self: center;
+    justify-self: end;
+    padding-top: 1rem;
+  }
+
+  .message {
+    grid-area: message;
+  }
+
+  //   .sign-up {
+  //     grid-area: sign-up;
+  //   }
+
+  .preferences {
+    grid-area: preferences;
+  }
+
+  .store-location {
+    flex: 1 1 50%;
+
+    select {
+      width: calc(90% - 32px);
+    }
+  }
+
+  .submit-form {
+    flex: 1 1 50%;
+    padding-top: 1.5rem;
+
+    input {
+      width: 80%;
+    }
+  }
+
+  .submit-form,
+  .privacy-txt {
+    height: 7rem;
+  }
+
+  .privacy-txt {
+    flex: 1 1 50%;
+    max-width: none;
+    img {
+      left: 30rem;
+      top: 2.3rem;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .avenue-client-reg {
+      grid-template-areas:
+        "firstname lastname"
+        "email email"
+        "password confirm"
+        "frequency phone"
+        "terms terms"
+        "message message"
+        "sign-up sign-up"
+        "preferences preferences";
+    }
+
+    .sign-up-container {
+      div {
+        flex: 1 1 33%;
+      }
+    }
+
+    .fine-print {
+      align-self: start;
+      justify-self: start;
+      padding-top: 0rem;
+    }
+
+    .radio-button {
+      p {
+        width: 100%;
+      }
+    }
+
+    .store-location {
+      flex: 1 1 100%;
+
+      select {
+        width: calc(50% - 32px);
+      }
+    }
+
+    .submit-form {
+      flex: 1 1 100%;
+      padding-top: 2rem;
+
+      input {
+        width: 40%;
+      }
+    }
+
+    .submit-form,
+    .privacy-txt {
+      height: 5rem;
+    }
+  }
+}

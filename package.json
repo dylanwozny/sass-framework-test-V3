@@ -1,0 +1,28 @@
+{
+  "name": "flex-git-test",
+  "version": "1.0.0",
+  "description": "github upload test",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanwozny/sass-framework-test-V3.git"
+  },
+  "keywords": [
+    "flex"
+  ],
+  "author": "dylan wozny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanwozny/flex-test-github/issues"
+  },
+  "homepage": "https://github.com/dylanwozny/flex-test-github#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "git": "^0.1.5",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.7"
+  }
+}
