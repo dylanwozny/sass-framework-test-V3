@@ -20,11 +20,14 @@ https://stackoverflow.com/questions/46877667/how-to-push-a-new-initial-project-t
 	
 	DOWNLOAD
 
-	navigate to directory you want to clone to...
-
-	git clone https://github.com/dylanwozny/sass-framework-test-V3.git
+	navigate to directory you want to clone to
+		command line: cd C:\Users\Dylan\Desktop\summer-site-workspace..
+	
+	download from github
+		command line: git clone https://github.com/dylanwozny/sass-framework-test-V3.git
 
 	open directory in vs code
+		command line: code -r C:\Users\Dylan\Desktop\summer-site-workspace..
 
 	UPLOAD
 
