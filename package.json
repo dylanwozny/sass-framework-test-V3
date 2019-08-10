@@ -1,5 +1,5 @@
 {
-  "name": "flex-git-test",
+  "name": "wes-bos-equal-height-columns",
   "version": "1.0.0",
   "description": "github upload test",
   "main": "gulpfile.js",
@@ -24,5 +24,6 @@
     "git": "^0.1.5",
     "jquery": "^1.9.1",
     "popper.js": "^1.14.7"
-  }
+  },
+  "devDependencies": {}
 }
