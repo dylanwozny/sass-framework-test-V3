@@ -907,4 +907,40 @@ a:hover {
   font-size: 3rem;
   margin-bottom: .5rem;
 }
+
+.equal {
+  color: black;
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.small {
+  font-size: 15px;
+}
+
+.large {
+  font-size: 30px;
+}
+
+.elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(33% - 20px);
+          flex: 0 1 calc(33% - 20px);
+}
 /*# sourceMappingURL=style.css.map */

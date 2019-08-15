@@ -1,0 +1,32 @@
+.equal {
+  color: black;
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.small {
+  font-size: 15px;
+}
+
+.large {
+  font-size: 30px;
+}
+
+// flex-box starts here //
+
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  // affects bottom row
+  justify-content: space-between;
+}
+
+.item {
+  // minus the margin on item
+  flex: 0 1 calc(33% - 20px);
+}

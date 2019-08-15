@@ -1,9 +1,9 @@
 https://stackoverflow.com/questions/46877667/how-to-push-a-new-initial-project-to-github-using-vs-code
 
 1. install GIT! (NOT GIT HUB) on desktop  https://git-scm.com/download/win 
-2. insatll node.js 
+2. insatll node.js (node.js is needed for npm)
 3. Reload visual studio code
-4. type "npm init" and fill out
+4. type "npm init" and fill out (ONLY DO IF THIS IS THE FIRST TIME)
 5. type "npm install" (will load previous depednacies(boostrap,jquery etc.) that is written in json file )
 ///// install bootsrap or you cant install other with npm install command /////
 //// "NPM INSTALL WILL BE written to NODE_MODULES and Other installed things with npm will be logged here!"
